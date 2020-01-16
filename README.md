@@ -4,8 +4,9 @@ Here's an application I made that will help clean up data-sets.
 I used the application for OpenAis GPT-2, but there's infinite other use cases that you can adopt it to
 
 When downloading and using GPT-2, I struggled to build my own data-sets as most of the data I downloaded was stored in hundreds 
-(Sometimes thousands) of diffrent text files. So I put together this application that will let people combine all the textfiles together
-into a singular file that can be used to fine-tune the nueral network.
+(Sometimes thousands) of diffrent text files. So I was forced to manually combine the files by copying and pasting them.
+
+This was a rather time consuming and exhaustive process, as it would have taken considerable time to combine 10,000 articles into one giant file, so I put together this small app that will automate the process by combining all the textfiles together into a singular file that can be used to fine-tune the nueral network.
 
 The application stores each file in the single output file, and seperates the entries with <|startoftext|> and <|lastoftext|> 
 I have done this becuase I found that when finetuneing GPT-2 you will get better results whenever you specify where new articles begin
